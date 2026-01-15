@@ -10,12 +10,16 @@ int main(){
     bn::core::init();
     bn::backdrop::set_color(bn::color(31,0,31));
 
-    if(bn::keypad::a_pressed()) {
+    while(true){ 
+        if (bn::keypad::a_pressed()) {
         bn::backdrop::set_color(bn::color(31,21,22));
-    }
+        }
 
+        if (bn::keypad::b_pressed()) {
+            bn::backdrop::set_color(bn::color(10,31,10));
+        }
     
-    while(true) {
     bn::core::update();
-}
+    }   
+
 }
