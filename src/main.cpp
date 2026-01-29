@@ -6,6 +6,8 @@
 #include <bn_core.h>
 #include <bn_log.h>
 #include <bn_vector.h>
+#include <bn_sprite_palettes.h>
+
 
 
 
@@ -55,20 +57,18 @@ for(int y = -40; y <= 40; y += 20)
 }
 
 // scale the first circle to be larger
-circles[0].set_scale(1.8);
+circles[0].set_rotation_angle(45);
 
-circles[1].set_scale(2.5);
+circles[1].set_scale(2.0);
 
-circles[2].set_horizontal_scale(5.0);
+circles[2].set_horizontal_scale(2.0);
 
-circles[3].set_vertical_scale(3.2);
+circles[3].set_vertical_scale(3.0);
 
-circles[4].set_shear(10.8);
+circles[4].set_shear(0.3);
+
 
 //when you set number higher like  (10.8) the sprite becomes micro
-
-
-
 
 
 
