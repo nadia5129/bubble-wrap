@@ -6,7 +6,6 @@
 #include <bn_core.h>
 #include <bn_log.h>
 #include <bn_vector.h>
-#include <bn_sprite_palettes.h>
 
 
 
@@ -66,8 +65,6 @@ circles[2].set_horizontal_scale(2.0);
 circles[3].set_vertical_scale(3.0);
 
 circles[4].set_shear(0.3);
-
-
 //when you set number higher like  (10.8) the sprite becomes micro
 
 
@@ -83,8 +80,10 @@ circles[4].set_shear(0.3);
          else{
         bn::backdrop::set_color(bn::color(31, 18, 20)); 
          }
-    
+   
+
     bn::core::update();
     }   
+
 
 }
